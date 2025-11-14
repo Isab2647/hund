@@ -22,6 +22,9 @@ header {
 #main-disclamer-content {
   display: flex;
   column-gap: 1rem;
+  height: 100%;
+  width: 70%;
+  padding-top: 2em;
 }
 
 main section {
@@ -96,7 +99,7 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.6rem;
+  
 }
 
 #logotype-wrapper>a {
