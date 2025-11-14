@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/forms.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="icon" type="image/svg" href="img/logo.svg" />
     <title>Emergency Site</title>
   </head>
   <body id="register">
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> <img src="img/logo.svg" alt="Logo af kødben, hvor der inde i står hjælp!"></a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Information </a></li>
+          <li><a class="menuItem" href="register.html">Formular</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -34,32 +34,7 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
-
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <!-- <form id="webform"></form> -->
-      </section>
-
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder"></p>
-          <div>
-            <p>Navn: <span id="navn_output"></span></p>
-            <p>Mail: <span id="mail_output"></span></p>
-            <p>Tlf. nr.: <span id="tlf_output"></span></p>
-            <p>Race: <span id="race_output"></span></p>
-            <p>Alder: <span id="alder_output"></span></p>
-            <p>Køn: <span id="koen_output"></span></p>
-            <p>Problem: <span id="problem_output"></span></p>
-            <p>Terms: <span id="terms_output"></span></p>
-          </div>
-        </article>
-      </section>
+      <h1>Hvad er dit problem?</h1>
 
       <div class="grid_1">
         <form>
@@ -182,6 +157,22 @@
           </div>
         </form>
       </div>
+      <section id="form-summary">
+        <h2>Summary</h2>
+        <article>
+          <p class="placeholder"></p>
+          <div>
+            <p>Navn: <span id="navn_output"></span></p>
+            <p>Mail: <span id="mail_output"></span></p>
+            <p>Tlf. nr.: <span id="tlf_output"></span></p>
+            <p>Race: <span id="race_output"></span></p>
+            <p>Alder: <span id="alder_output"></span></p>
+            <p>Køn: <span id="koen_output"></span></p>
+            <p>Problem: <span id="problem_output"></span></p>
+            <p>Terms: <span id="terms_output"></span></p>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
       <nav class="some">
@@ -210,6 +201,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
