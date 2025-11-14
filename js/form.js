@@ -13,7 +13,6 @@ function cancelPopup(event) {
   event.preventDefault();
   form.querySelector(":user-invalid").focus();
 }
-
 function handleSubmit(event) {
   event.preventDefault();
 
