@@ -7,6 +7,17 @@
   background-color: var(--info-background-color);
   padding: 0;
 }
+
+#form-summary article {
+  background-color: white;
+  margin: 3em;
+}
+#form-summary div,
+p {
+  padding-left: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 #form-summary h2 {
   line-height: 3rem;
   text-align: center;
