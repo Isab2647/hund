@@ -91,7 +91,7 @@ legend {
   accent-color: #ff4b00;
 }
 
-input,
+input:not([role="switch"]),
 textarea,
 fieldset {
   border: 1px solid #000000;
