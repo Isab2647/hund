@@ -12,17 +12,25 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/infographic.css" />
-     <link rel="icon" type="image/svg" href="img/logo.svg" />
+    <link rel="icon" type="image/svg" href="img/logo.svg" />
     <title>Emergency Site</title>
   </head>
   <body id="instruction">
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> <img src="img/logo.svg" alt="Logo af kødben, hvor der inde i står hjælp!"></a>
+          <a href="index.html">
+            <img
+              src="img/logo.svg"
+              alt="Logo af kødben, hvor der inde i står hjælp!"
+          /></a>
         </div>
         <ul class="menu">
-          <li><button id="knap">Light/dark mode</button></li>
+          <!-- <li><button id="knap">Light/dark mode</button></li> -->
+          <label>
+            <span class="visually-hidden">Theme</span>
+            <input id="theme-toggle" role="switch" type="checkbox" />
+          </label>
           <li><a class="menuItem" href="instruction.html">Information </a></li>
           <li><a class="menuItem" href="register.html">Formular</a></li>
         </ul>
@@ -36,7 +44,7 @@
 
     <main>
       <h1>General information</h1>
-     
+
       <section class="info-graphic">
         <?xml version="1.0" encoding="UTF-8"?>
         <svg
@@ -43492,10 +43500,22 @@
       <section class="info-text">
         <h2>Hundens behov</h2>
         <article>
-          <p class="placeholder">At have en hund er at få en trofast ven, der altid er glad for at se dig. Den bringer glæde, selskab og struktur i hverdagen – men kræver også tid, ansvar og kærlighed.</p>
+          <p class="placeholder">
+            At have en hund er at få en trofast ven, der altid er glad for at se
+            dig. Den bringer glæde, selskab og struktur i hverdagen – men kræver
+            også tid, ansvar og kærlighed.
+          </p>
         </article>
-        <aside id="efficiency" class="info-box">At anskaffe sig en hund, er et stor ansvar, og der er derfor mange ting, som man skal være opmærksom på.</aside>
-        <aside id="requirement" class="info-box">Når man får hund, skal man være opmærksom på, at det kræver tid, tålmodighed og daglig pleje. Hunden har brug for motion, træning, social kontakt og dyrlægebesøg. Man skal også tænke over økonomi, plads og livsstil – en hund er et livslangt ansvar.</aside>
+        <aside id="efficiency" class="info-box">
+          At anskaffe sig en hund, er et stor ansvar, og der er derfor mange
+          ting, som man skal være opmærksom på.
+        </aside>
+        <aside id="requirement" class="info-box">
+          Når man får hund, skal man være opmærksom på, at det kræver tid,
+          tålmodighed og daglig pleje. Hunden har brug for motion, træning,
+          social kontakt og dyrlægebesøg. Man skal også tænke over økonomi,
+          plads og livsstil – en hund er et livslangt ansvar.
+        </aside>
       </section>
     </main>
 
@@ -43528,5 +43548,6 @@
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
     <script src="js/darkmode.js"></script>
+    <script src="js/switch.js"></script>
   </body>
 </html>

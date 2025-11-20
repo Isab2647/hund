@@ -5,7 +5,7 @@
   --color-bg: light-dark(#fcee94, #707070); /* page background */
 
   /* Header */
-  --color-head-bg: light-dark(#ff4b00, #f47f58);
+  --color-head-bg: light-dark(#ff4b00, #ff4b00);
 
   /* Logotype */
   --color-logotype-bg: light-dark(#000, #FFFAE2);
@@ -40,7 +40,7 @@
 
   /* Cards */
   --color-card-bg: light-dark(#fff, #272727);
-  --color-cta-card-bg: light-dark(#ff4b00, #f47f58);
+  --color-cta-card-bg: light-dark(#ff4b00, #ff4b00);
   /* news-cards */
   --color-news-bg: light-dark(#fffae2, #494949);
   --color-news-bg-inverted: light-dark(#dbe2f5, #272727);
@@ -86,3 +86,54 @@ html.dark {
 #HotSpot_kodben:hover{
 transform: scale(1.02)
 }
+
+
+html {
+  color-scheme: light;
+  
+  &.dark {
+    color-scheme: dark;
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+[role="switch"] {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer; 
+  border-radius: 9999px;
+}
+
+[role="switch"]::before{
+  content: "";
+  display: block;
+  padding: 3px;
+  height: 100%;
+  aspect-ratio: 1; 
+  background: gray content-box;
+  border-radius: inherit;
+  transition: .3s;
+}
+
+
+[role="switch"]:checked::before {
+  background-color: rgb(90, 91, 90);
+  translate: calc(var(--w) - var(--h));
+}
+
+
+/* *,
+::before,
+::after {
+  box-sizing: border-box;
+} */

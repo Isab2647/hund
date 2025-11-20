@@ -19,10 +19,18 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> <img src="img/logo.svg" alt="Logo af kødben, hvor der inde i står hjælp!"></a>
+          <a href="index.html">
+            <img
+              src="img/logo.svg"
+              alt="Logo af kødben, hvor der inde i står hjælp!"
+          /></a>
         </div>
         <ul class="menu">
-          <li><button id="knap">Light/dark mode</button></li>
+          <!-- <li><button id="knap">Light/dark mode</button></li> -->
+          <label>
+            <span class="visually-hidden">Theme</span>
+            <input id="theme-toggle" role="switch" type="checkbox" />
+          </label>
           <li><a class="menuItem" href="instruction.html">Information </a></li>
           <li><a class="menuItem" href="register.html">Formular</a></li>
         </ul>
@@ -204,5 +212,6 @@
     <script src="js/burger.js"></script>
     <script src="js/form.js"></script>
     <script src="js/darkmode.js"></script>
+    <script src="js/switch.js"></script>
   </body>
 </html>
