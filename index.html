@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-     <link rel="icon" type="image/svg" href="img/logo.svg" />
+    <link rel="icon" type="image/svg" href="img/logo.svg" />
     <title>Emergency Site</title>
   </head>
   <body id="frontpage">
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> <img src="img/logo.svg" alt="Logo af kødben, hvor der inde i står hjælp!"></a>
+          <a href="index.html">
+            <img
+              src="img/logo.svg"
+              alt="Logo af kødben, hvor der inde i står hjælp!"
+          /></a>
         </div>
         <ul class="menu">
+          <li><button id="knap">Light/dark mode</button></li>
           <li><a class="menuItem" href="instruction.html">Information</a></li>
           <li><a class="menuItem" href="register.html">Formular</a></li>
         </ul>
@@ -52,7 +57,7 @@
           <div class="daily_text">
             <h2>General information</h2>
             <p>Dette skal du være opmærksom på, når du får hund.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
@@ -60,7 +65,7 @@
           <div class="daily_text">
             <h2>Formular</h2>
             <p>Har du problemer med din bedste ven?</p>
-            <a href="" class="cta_btn">Skriv til os</a>
+            <a href="register.html" class="cta_btn">Skriv til os</a>
           </div>
         </article>
       </section>
@@ -221,6 +226,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
